@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  html{
+    overflow: hidden;
+    height: 100%;
+    max-height: 100%;
+  }
+  body{
+    background-color: antiquewhite;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+}
+.switchOffRight{
+    position: absolute;
+    width:30px;
+    margin-left: 47.3%;
+    margin-top: 28.5%;
+    z-index:1;
+    filter: drop-shadow(-3px 3px 5px antiquewhite);
+    visibility: hidden;
+}
+.switchOffRight:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.cover{
+    position:absolute;
+    height:7%;
+    width:6.5%;
+    margin-left: 20.5%;
+    margin-top: 36.7%;
+    z-index: 3;
+    visibility: hidden;
+    filter: drop-shadow(-3px 3px 5px antiquewhite);
+}
+.cover:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.machineFront{
+    width:50%;
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 10%;
+    filter: drop-shadow(30px 10px 4px rgb(218, 199, 174));
+}
+.machineFront.turned{
+    visibility: hidden;
+}
+.machineRight{
+    position: absolute;
+    height:503.5px;
+    margin-left: 20%;
+    margin-top: 10%;
+    filter: drop-shadow(30px 10px 4px rgb(218, 199, 174));
+    visibility:hidden;
+    z-index:0;
+    display: inline-block;
+}
+.machineRight.turned{
+    visibility:visible;
+}
+#cable{
+    margin-left: 80%;
+    width: 200px;
+    position: absolute;
+    vertical-align: middle;
+    z-index:1;
+}
+#bobbinCase{
+    width:100px;
+    margin-left:83%;
+    margin-top: 21%;
+    z-index: 3;
+    position: absolute;
+}
+#Bobbin{
+    width:80px;
+    margin-left:85%;
+    margin-top: 28%;
+    position:absolute;
+    z-index:2;
+}
+#bobbinCaseFilled{
+    width:100px;
+    margin-left:83%;
+    margin-top: 21%;
+    position:absolute;
+    z-index: 3;
+    visibility: hidden;
+}
+#cableRightGray{
+    margin-left:45%;
+    margin-top: 36.7%;
+    width: 100px;
+    position: absolute;
+    visibility: hidden;
+    z-index:2;
+}
+#machinebobbinCaseFilledGray{
+    margin-left:-166px;
+    margin-top: 465px;
+    width:30px;
+    position: absolute;
+    z-index:3;
+    visibility: hidden;
+}
+#Spool{
+    width:70px;
+    margin-left: 85.5%;
+    margin-top: 40%;
+    z-index: 2;
+    position: absolute;
+    vertical-align: middle;
+}
+#machineSpoolGray{
+    width:40px;
+    margin-left: 6%;
+    margin-top: 10.4%;
+    position: absolute;
+    z-index:2;
+    visibility: hidden;
+}
+.coverOpen{
+    margin-left: 278px;
+    margin-top: 550px;
+    width:95px;
+    position: absolute;
+    z-index:2;
+    visibility: hidden;
+    filter: drop-shadow(-3px 3px 5px antiquewhite);
+}
+.coverOpen:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.longSlot{
+    position:absolute;
+    width:23px;
+    height: 57px;
+    margin-left: 24.7%;
+    margin-top: 16.5%;
+    z-index:2;
+    visibility: hidden;
+    filter: drop-shadow(3px 3px 5px antiquewhite);
+}
+.longSlot:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.threadRegulator{
+    position:absolute;
+    z-index:2;
+    width:11px;
+    margin-left: 24.5%;
+    margin-top: 27.4%;
+    filter: drop-shadow(3px 3px 5px antiquewhite);
+    visibility: hidden;
+}
+.threadRegulator:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.threadLever{
+    position:absolute;
+    z-index:2;
+    width:15px;
+    margin-left: 23.1%;
+    margin-top: 18.3%;
+    filter: drop-shadow(3px 3px 5px antiquewhite);
+    visibility: hidden;
+}
+.threadLever:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.threadGuide{
+    position:absolute;
+    z-index:2;
+    width:32px;
+    margin-left: 22.6%;
+    margin-top: 30.2%;
+    filter: drop-shadow(3px 3px 5px antiquewhite);
+    visibility: hidden;
+}
+.threadGuide:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.icons{
+    height:40px;
+    width:1300px;
+}
+.arrowRight{
+    position: absolute;
+    margin-left: 55%;
+    margin-top: 30%;
+    display: inline-block;
+    width:40px;
+    height:40px;
+    filter: drop-shadow(10px 10px 4px rgb(218, 199, 174));
+}
+.arrowLeft{
+    position: absolute;
+    margin-top: 30%;
+    margin-left: 10%;
+    width:40px;
+    filter: drop-shadow(10px 10px 4px rgb(218, 199, 174));
+    z-index: 2;
+}
+.arrowRight:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.arrowLeft:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.draggable {
+    position:flex;
+    cursor: move;
+    transition: opacity 0.2s;
+    filter: drop-shadow(10px 10px 4px rgb(218, 199, 174));
+  }
+.draggable-hover {
+    opacity: 0.5;
+  }
+
+.droppable-hover {
+    opacity: 0.8;
+  }
+.droppable.dropped img {
+    pointer-events: none;
+  }
+.draggable.dragged {
+    user-select: none;
+    opacity: 0.1;
+    cursor: default;
+  }
+  .draggable.dragged:hover {
+    opacity: 0.1;
+  }
+
+
+
+
+
+
+
+

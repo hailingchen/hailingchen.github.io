@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href='./main7.css'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <img data-draggable-id='bobbinCase' id='bobbinCase' class='droppable' src="../modified photos/bobbinCase.png" alt="bobbin case">
+        <img src="../modified photos/switchOff.png" alt="switchOff" class="switchOffRight" id="switchOffRight" onclick="turnOn()">
+        <img src="../modified photos/cover.png" alt="cover" class="cover" id="cover" onclick="openCover()">
+        <img src="../modified photos/coverOpen.png" alt="cover opened" class="coverOpen" id="coverOpen" onclick="closeCover()">
+        <img src="../modified photos/longSlot.png" alt="long slot" class="longSlot" id="longSlot" onclick="longSlot()">
+        <img src="../modified photos/threadRegulator.png" alt="thread regulator" class="threadRegulator" id="threadRegulator" onclick="threadRegulator()">
+        <img src="../modified photos/threadLever.png" alt="thread lever" class="threadLever" id="threadLever" onclick="threadLever()">
+        <img src="../modified photos/threadGuide.png" alt="thread guide" class="threadGuide" id="threadGuide" onclick="threadGuide()">
+        <section>
+        <div>
+            <img src="../modified photos/machineFront.png" alt="machine front" class="machineFront" id="machineFront">
+            <img src="../modified photos/machineRight.png" alt="machine right" class="machineRight" id="machineRight">
+        </div>
+        <div class="icons">
+            <img src="../icons/arrowLeft.png" alt="left arrow" class="arrowLeft" onclick="turnLeft()">
+            <img src="../icons/arrowRight.png" alt="right arrow" class="arrowRight" onclick="turnRight()">
+        </div>
+        </section>
+        <section class="draggable-elements">
+            <img src="../modified photos/cable.png" draggable='true' class='draggable' alt="cable" id="cable" >
+            <img src="../modified photos/bobbin.png" draggable='true' class="draggable" alt="bobbin" id="Bobbin">
+            <img src="../modified photos/bobbinCaseFilled.png" draggable="true" class="draggable" alt="bobbin case filled" id="bobbinCaseFilled">
+            <img src="../modified photos/spool.png" draggable='true' class='draggable' alt="spool" id="Spool" >
+                </section>
+        <section class="droppable-elements">
+            <div>
+                <img  data-draggable-id="cableRight" id='cableRightGray' class="droppable" draggable='true' src="../modified photos/cableRightGray.png" alt="cable right gray">
+                <img  data-draggable-id="machinebobbinCaseFilled" id='machinebobbinCaseFilledGray' class="droppable" draggable='true' src="../modified photos/machinebobbinCaseFilledGray.png" alt="bobbin case gray">
+                <img data-draggable-id="machineSpool" id="machineSpoolGray" class="droppable" draggable='true' src="../modified photos/machineSpoolGray.png" alt="spool gray">
+            </div>
+        </section>
+           <script src='./main7.js'></script>
+    </body>
+</html>
